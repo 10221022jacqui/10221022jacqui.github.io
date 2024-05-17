@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block titulo %}{{ titulo }}{% endblock %}
+{% block contenido %}
+<form action="/divicion" method="post">
+<label>Numero 1</label><input type="number" name="num1"><br><br>
+<label>Numero 2</label><input type="number" name="num2"><br><br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar">
+</form>
+{% endblock %}
